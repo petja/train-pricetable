@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <title>Hinnasto</title>
+        <meta charset="UTF-8" />
+        <meta content="width=device-width,initial-scale=1" name="viewport">
+        <meta name="theme-color" content="#D03324" />
+
+        <style>
+            body {
+                margin: 0;
+            }
+
+            td {
+                text-align: center;
+                padding: 0.5em;
+            }
+
+            th {
+                font-weight: normal;
+            }
+
+            .price-input {
+                background: none;
+                border: 0;
+                width: 4em;
+                text-align: right;
+            }
+
+            tr:nth-child(odd) {
+                background: #F0F0F0;
+            }
+
+            tr:hover {
+                background: #ffa;
+            }
+
+            td:hover::after, th:hover::after {
+                content: "";
+                position: absolute;
+                background: #ffa;
+                left: 0;
+                top: -100vh;
+                height: 100vh;
+                width: 100vw;
+                z-index: -1;
+            }
+
+            .price-input::-webkit-input-placeholder {
+                font-style: italic;
+                opacity: 0.3333;
+                color: inherit;
+            }
+
+            table {
+                width: 100%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="root"></div>
+    </body>
+
+    <script src="/main.bundle.js" defer></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab|Fugaz+One" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+</html>
